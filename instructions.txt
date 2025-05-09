@@ -1,0 +1,42 @@
+START
+    IMPORT the random library
+
+    DEFINE a list of 5-letter words (word_list)
+
+    RANDOMLY SELECT a secret word from the list (secret_word)
+
+    DEFINE a function called give_feedback(guess, secret)
+        INITIALIZE an empty string called feedback
+        FOR each letter at position i (from 0 to 4)
+            IF guess[i] is equal to secret[i]
+                ADD "[✓] LETTER" to feedback (letter in uppercase)
+            ELSE IF guess[i] is in secret
+                ADD "[!] LETTER" to feedback (letter in uppercase)
+            ELSE
+                ADD "[X] LETTER" to feedback (letter in uppercase)
+        RETURN feedback without trailing spaces
+
+    ASK the user for their name and convert it to uppercase
+    DISPLAY a welcome message and explain the game
+
+    FOR attempt from 1 to 6
+        ASK the user to enter a 5-letter word (guess) and convert it to lowercase
+
+        IF guess is not 5 letters long OR contains non-alphabetic characters
+            DISPLAY error message for invalid length or characters
+            CONTINUE to the next attempt
+
+        IF guess is not in the valid word list
+            DISPLAY message that the word is not valid
+            CONTINUE to the next attempt
+
+        CALL the function give_feedback with guess and secret_word
+        DISPLAY the feedback result
+
+        IF guess is equal to secret_word
+            DISPLAY victory message
+            END the game
+
+    IF the word was not guessed in 6 attempts
+        DISPLAY loss message and reveal the secret word
+END
