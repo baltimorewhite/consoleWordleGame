@@ -7,7 +7,8 @@
 """
 Feedback 16/5/25
 
-- Put the required heading at the top of the file
+- Put the required heading at the top of the file/////////// me falta hacer la descripcion del codigo que va al inicio
+1. usar el archivo de marcos como guia. Acuerdese de poner cada funciones variables  y explicarlas
 
 - Do not be afraid of adding blank lines into output
     - between the greeting and asking for the user's name
@@ -72,7 +73,10 @@ def score_guess(guess, word):
     hello plank
     bells label
     yummy mummy
-    plamk feeds
+    plank feeds
+    spear pears
+    drift fruit
+    apple puppy
 
 
     """
